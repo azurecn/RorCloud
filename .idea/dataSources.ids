@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails RorCloud: development" uuid="66312f36-f927-41e4-bcab-42205075b1e3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails RorCloud: test" uuid="f1809b47-3c31-4fa0-bcf9-3e73a990903c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails RorCloud: production" uuid="dc9387ee-9656-4c13-89b1-a5c69299b4d3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

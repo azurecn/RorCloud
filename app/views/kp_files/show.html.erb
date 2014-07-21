@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sha1:</b>
+  <%= @kp_file.sha1 %>
+</p>
+
+<p>
+  <b>Is delete:</b>
+  <%= @kp_file.is_delete %>
+</p>
+
+<p>
+  <b>Rev:</b>
+  <%= @kp_file.rev %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @kp_file.name %>
+</p>
+
+<p>
+  <b>Create time:</b>
+  <%= @kp_file.create_time %>
+</p>
+
+<p>
+  <b>Modify time:</b>
+  <%= @kp_file.modify_time %>
+</p>
+
+<p>
+  <b>Share:</b>
+  <%= @kp_file.share_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @kp_file.size %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @kp_file.type %>
+</p>
+
+<p>
+  <b>File:</b>
+  <%= @kp_file.file_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_kp_file_path(@kp_file) %> |
+<%= link_to 'Back', kp_files_path %>

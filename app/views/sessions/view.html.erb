@@ -1,0 +1,20 @@
+<html>
+<body>
+<table>
+  <tr>
+    <th>商品条码</th>
+    <th>商品名称</th>
+    <th>总    价</th>
+  </tr>
+
+  <% @info.each do |value| %>
+      <tr>
+        <td><%= value['upc'] %></td>
+        <td><%= value['name'] %></td>
+        <td><%= value['TotalLines'] %>元</td>
+      </tr>
+  <% end %>
+</table>
+<%= debug(params) if Rails.env.development? %>
+</body>
+</html>

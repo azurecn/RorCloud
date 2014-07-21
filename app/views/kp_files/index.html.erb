@@ -1,0 +1,41 @@
+<h1>Listing kp_files</h1>
+
+<table>
+  <tr>
+    <th>Sha1</th>
+    <th>Is delete</th>
+    <th>Rev</th>
+    <th>Name</th>
+    <th>Create time</th>
+    <th>Modify time</th>
+    <th>Share</th>
+    <th>Size</th>
+    <th>Type</th>
+    <th>File</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kp_files.each do |kp_file| %>
+  <tr>
+    <td><%= kp_file.sha1 %></td>
+    <td><%= kp_file.is_delete %></td>
+    <td><%= kp_file.rev %></td>
+    <td><%= kp_file.name %></td>
+    <td><%= kp_file.create_time %></td>
+    <td><%= kp_file.modify_time %></td>
+    <td><%= kp_file.share_id %></td>
+    <td><%= kp_file.size %></td>
+    <td><%= kp_file.type %></td>
+    <td><%= kp_file.file_id %></td>
+    <td><%= link_to 'Show', kp_file %></td>
+    <td><%= link_to 'Edit', edit_kp_file_path(kp_file) %></td>
+    <td><%= link_to 'Destroy', kp_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kp file', new_kp_file_path %>

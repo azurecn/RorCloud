@@ -1,0 +1,57 @@
+<%= form_for(@kp_file) do |f| %>
+  <% if @kp_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kp_file.errors.count, "error") %> prohibited this kp_file from being saved:</h2>
+
+      <ul>
+      <% @kp_file.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sha1 %><br />
+    <%= f.text_field :sha1 %>
+  </div>
+  <div class="field">
+    <%= f.label :is_delete %><br />
+    <%= f.text_field :is_delete %>
+  </div>
+  <div class="field">
+    <%= f.label :rev %><br />
+    <%= f.number_field :rev %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :create_time %><br />
+    <%= f.date_select :create_time %>
+  </div>
+  <div class="field">
+    <%= f.label :modify_time %><br />
+    <%= f.date_select :modify_time %>
+  </div>
+  <div class="field">
+    <%= f.label :share_id %><br />
+    <%= f.number_field :share_id %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br />
+    <%= f.number_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :file_id %><br />
+    <%= f.text_field :file_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

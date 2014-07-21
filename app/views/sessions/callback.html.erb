@@ -1,0 +1,18 @@
+<html>
+<body>
+<h6>文件列表</h6>
+<table>
+<% for value in @kp_files do %>
+    <% if value['type'] != 'folder' %>
+        <tr>
+          <td><%= link_to value['name'], download_path(value) %></td>
+          <td><%= value['type']%></td>
+        </tr>
+    <% end %>
+<% end %>
+</table>
+<br><%= link_to '下载', 'download'  %>
+</body>
+<%= debug(params) if Rails.env.development? %>
+
+</html>
